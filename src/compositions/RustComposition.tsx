@@ -4,11 +4,14 @@
 // https://opensource.org/licenses/MIT
 
 import { z } from "zod";
+import RustLogo from "../logos/Rust";
 
 export const rustCompSchema = z.object({})
 
 export const RustComposition = () => {
   return (
-    <div>RustComposition</div>
+    <div className="logo-container">
+      <RustLogo />
+    </div>
   )
 }

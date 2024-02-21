@@ -11,7 +11,7 @@ export const RemotionRoot: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="MyComp"
+				id="MainComp"
 				component={RustComposition}
 				durationInFrames={240}
 				fps={60}
