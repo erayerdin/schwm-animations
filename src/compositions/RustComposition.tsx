@@ -7,11 +7,24 @@ import { interpolate, useCurrentFrame } from "remotion";
 import { z } from "zod";
 import RustLogo from "../logos/Rust";
 
-export const rustCompSchema = z.object({})
+export const rustCompSchema = z.object({
+  slowness: z.number().default(8)
+    .refine(
+      (n) => {
+        const logBase = Math.log2(n);
+        return Number.isInteger(Math.floor(logBase));
+      },
+      {
+        message: "Slowness must be a power of 2",
+      }
+    ),
+})
 
-export const RustComposition = () => {
+type Props = z.input<typeof rustCompSchema>;
+
+export const RustComposition = ({ slowness = 8 }: Props) => {
   const frame = useCurrentFrame();
-  const degrees = interpolate(frame, [0, 60], [0, 45/4]);
+  const degrees = interpolate(frame, [0, 60], [0, 90 / slowness]);
 
   return (
     <div className="logo-container">

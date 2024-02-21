@@ -11,14 +11,16 @@ export const RemotionRoot: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="MainComp"
+				id="RustComposition"
 				component={RustComposition}
 				durationInFrames={60}
 				fps={60}
 				width={1080}
 				height={1080}
 				schema={rustCompSchema}
-				defaultProps={{}}
+				defaultProps={{
+					// slowness: 8,
+				}}
 			/>
 		</>
 	);
