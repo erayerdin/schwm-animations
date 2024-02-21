@@ -11,7 +11,8 @@ export const rustCompSchema = z.object({})
 export const RustComposition = () => {
   return (
     <div className="logo-container">
-      <RustLogo />
+      <RustLogo.Circle />
+      <RustLogo.Core />
     </div>
   )
 }
