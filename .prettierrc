@@ -3,6 +3,8 @@
   "bracketSpacing": false,
   "jsxBracketSameLine": false,
   "useTabs": true,
+  "printWidth": 120,
+  "tabWidth": 2,
   "overrides": [
     {
       "files": ["*.yml"],
