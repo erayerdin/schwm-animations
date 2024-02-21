@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "ymotongpoo.licenser",
-    "peterschmalfeldt.explorer-exclude"
+    "peterschmalfeldt.explorer-exclude",
+    "esbenp.prettier-vscode"
   ]
 }
