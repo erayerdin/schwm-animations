@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .logo-container {
-  @apply grid grid-rows-1 grid-cols-1 align-middle justify-center w-full h-full;
+	@apply grid grid-rows-1 grid-cols-1 align-middle justify-center w-full h-full;
 }
