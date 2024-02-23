@@ -4,4 +4,16 @@
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"css.lint.unknownAtRules": "ignore",
 	"licenser.license": "MIT",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "file",
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file"
+	},
+	"[typescriptreact]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
